@@ -13,6 +13,10 @@ const config: Config = {
         secondary: "#e4e4e4",
         accent: "#5571ab",
       },
+      fontFamily: {
+        poppins: ["var(--font-poppins)"],
+        bodoni: ["var(--font-bodoni)"],
+      },
     },
   },
   plugins: [],
