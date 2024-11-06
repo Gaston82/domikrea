@@ -12,7 +12,10 @@ const ActiveLink = ({ path, text }: ActiveLinkProps) => {
   const pathName = usePathname();
 
   return (
-    <Link className={`${pathName === path}? `} href={path}>
+    <Link
+      className={`${pathName === path && "border-b-2 text-primary"}`}
+      href={path}
+    >
       {text}
     </Link>
   );
