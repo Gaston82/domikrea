@@ -16,12 +16,12 @@ export const routes = [
     path: "/retouche",
   },
   {
-    text: "Qui-suis-je ?",
-    path: "/qui-suis-je ?",
+    text: "Qui suis je ?",
+    path: "/qui-suis-je",
   },
   {
     text: "Mon atelier",
-    path: "/mon atelier",
+    path: "/mon-atelier",
   },
   {
     text: "Contact",
