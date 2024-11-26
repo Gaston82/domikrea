@@ -6,9 +6,9 @@ import ActiveLink from "./ActiveLink";
 
 const Navbar = () => {
   return (
-    <header className="flex flex-col items-center font-bodoni text-2xl">
-      <Image src={logo} alt="Domikrea logo" width={300} height={172} />
-      <nav className="flex justify-center">
+    <header className="flex flex-row justify-between font-bodoni text-xl px-10">
+      <Image src={logo} alt="Domikrea logo" width={236} height={126} />
+      <nav className="flex">
         <ul className="flex justify-center items-center gap-10 px-12">
           {routes.map((route) => (
             <li key={route.path}>
