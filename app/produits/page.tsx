@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Bodoni_Moda } from "next/font/google";
 import Photo1 from "../../public/stock/photo1.jpg";
 import Photo2 from "../../public/stock/photo2.jpg";
 import Photo3 from "../../public/stock/photo3.jpg";
@@ -11,8 +10,6 @@ import Photo7 from "../../public/stock/photo7.jpg";
 import Photo8 from "../../public/stock/photo8.jpg";
 import Photo9 from "../../public/stock/photo9.jpg";
 import Category from "@/components/Category";
-
-const bodoniModa = Bodoni_Moda({ weight: "400", subsets: ["latin"] });
 
 const Produits = () => {
   const categories = [
@@ -36,9 +33,7 @@ const Produits = () => {
         <link rel="icon" href="/favicon.jpg" />
       </Head>
       <main className="flex flex-col items-center justify-center w-full p-10 gap-20">
-        <h2 className={`${bodoniModa.className} self-start text-3xl`}>
-          Créations
-        </h2>
+        <h2 className="font-bodoni self-start text-3xl">Créations</h2>
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-5">
           {categories.map(({ id, name, url }) => (
             <li key={id}>
