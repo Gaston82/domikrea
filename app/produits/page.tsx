@@ -1,27 +1,27 @@
-import Head from "next/head";
-import Link from "next/link";
-import Photo1 from "../../public/stock/photo1.jpg";
-import Photo2 from "../../public/stock/photo2.jpg";
-import Photo3 from "../../public/stock/photo3.jpg";
-import Photo4 from "../../public/stock/photo4.jpg";
-import Photo5 from "../../public/stock/photo5.jpg";
-import Photo6 from "../../public/stock/photo6.jpg";
-import Photo7 from "../../public/stock/photo7.jpg";
-import Photo8 from "../../public/stock/photo8.jpg";
-import Photo9 from "../../public/stock/photo9.jpg";
-import Category from "@/components/Category";
+import Head from 'next/head';
+import Link from 'next/link';
+import Photo1 from '../../public/stock/photo1.jpg';
+import Photo2 from '../../public/stock/photo2.jpg';
+import Photo3 from '../../public/stock/photo3.jpg';
+import Photo4 from '../../public/stock/photo4.jpg';
+import Photo5 from '../../public/stock/photo5.jpg';
+import Photo6 from '../../public/stock/photo6.jpg';
+import Photo7 from '../../public/stock/photo7.jpg';
+import Photo8 from '../../public/stock/photo8.jpg';
+import Photo9 from '../../public/stock/photo9.jpg';
+import Category from '@/components/Category';
 
 const Produits = () => {
   const categories = [
-    { id: "nuages", name: "Nuages", url: Photo1.src },
-    { id: "etoiles", name: "Étoiles", url: Photo2.src },
-    { id: "lunes", name: "Lunes", url: Photo3.src },
-    { id: "poules", name: "Poules", url: Photo4.src },
-    { id: "fanions", name: "Fanions", url: Photo5.src },
-    { id: "guirlandes", name: "Guirlandes", url: Photo6.src },
-    { id: "bananes", name: "Bananes", url: Photo7.src },
-    { id: "pochettes-portables", name: "Pochettes portables", url: Photo8.src },
-    { id: "trousses", name: "Trousses", url: Photo9.src },
+    { id: 'nuages', name: 'Nuages', url: Photo1.src },
+    { id: 'etoiles', name: 'Étoiles', url: Photo2.src },
+    { id: 'lunes', name: 'Lunes', url: Photo3.src },
+    { id: 'poules', name: 'Poules', url: Photo4.src },
+    { id: 'fanions', name: 'Fanions', url: Photo5.src },
+    { id: 'guirlandes', name: 'Guirlandes', url: Photo6.src },
+    { id: 'bananes', name: 'Bananes', url: Photo7.src },
+    { id: 'pochettes-portables', name: 'Pochettes portables', url: Photo8.src },
+    { id: 'trousses', name: 'Trousses', url: Photo9.src },
   ];
 
   return (
