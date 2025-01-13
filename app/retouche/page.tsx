@@ -1,7 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
-import React from "react";
-import Photo7 from "../../public/stock/photo7.jpg";
+import Head from 'next/head';
+import Image from 'next/image';
+import React from 'react';
+import Photo7 from '../../public/stock/photo7.jpg';
 
 const Retouche = () => {
   return (
@@ -21,11 +21,11 @@ const Retouche = () => {
               magna non sem tristique volutpat. Pellentesque venenatis orci eu
               nulla molestie, sit amet aliquet urna varius. Suspendisse id
               pharetra leo, quis mollis lorem. Aenean lacinia tellus lectus, at
-              volutpat lectus rhoncus a. Fusce magna nibh, convallis ac ultricies
-              sed, volutpat quis dolor. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Donec a magna non sem tristique volutpat.
-              Pellentesque venenatis orci eu nulla molestie, sit amet aliquet
-              urna varius.
+              volutpat lectus rhoncus a. Fusce magna nibh, convallis ac
+              ultricies sed, volutpat quis dolor. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Donec a magna non sem tristique
+              volutpat. Pellentesque venenatis orci eu nulla molestie, sit amet
+              aliquet urna varius.
             </p>
             <Image
               className="md:flex-[1] w-full h-auto object-cover"
@@ -35,7 +35,7 @@ const Retouche = () => {
               height={400}
             />
           </div>
-           {/* TODO: add button to download PDF price file */}
+          {/* TODO: add button to download PDF price file */}
         </div>
       </main>
     </>
