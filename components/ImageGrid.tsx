@@ -12,11 +12,11 @@ export interface ImageGridProps {
 
 const ImageGrid = ({ images }: ImageGridProps) => {
   return (
-    <div className="grid w-[80%] gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+    <div className="grid w-[80%] gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
       {images.map((image, index) => (
         <Image
           key={index}
-          className="w-full h-[200px] object-cover"
+          className="w-full h-[250px] object-cover"
           src={image.src}
           alt={image.alt}
           width={200}
