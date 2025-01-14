@@ -15,7 +15,7 @@ const Retouche = () => {
       <main className="flex flex-col items-center justify-center w-full px-[100px] py-[50px] pb-[200px] gap-[30px]">
         <h2 className="font-bodoni self-start text-3xl">Retouche</h2>
         <div className="w-full flex flex-col gap-[30px]">
-          <div className="flex flex md:flex-row w-full gap-[60px]">
+          <div className="flex flex flex-col md:flex-row w-full gap-[60px]">
             <p className="font-poppins leading-[3rem] font-light text-justify md:flex-[2] w-full">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
               magna non sem tristique volutpat. Pellentesque venenatis orci eu

@@ -43,22 +43,49 @@ const Customisation = () => {
             varius.
           </p>
         </div>
-        <div className="grid w-full md:w-[80%] gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-          {[Photo1, Photo2, Photo3, Photo4, Photo5, Photo6].map(
-            (photo, index) => (
-              <div
-                key={index}
-                className="w-full aspect-w-2 aspect-h-1 bg-gray-100 overflow-hidden"
-              >
-                <Image
-                  className="object-cover"
-                  src={photo}
-                  alt={`Photo${index + 1}`}
-                  layout="fill"
-                />
-              </div>
-            )
-          )}
+        <div className="grid w-[80%] gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <Image
+            className="w-full h-[200px] object-cover"
+            src={Photo1}
+            alt="Photo1"
+            width={200}
+            height={100}
+          />
+          <Image
+            className="w-full h-[200px] object-cover"
+            src={Photo2}
+            alt="Photo2"
+            width={200}
+            height={100}
+          />
+          <Image
+            className="w-full h-[200px] object-cover"
+            src={Photo3}
+            alt="Photo3"
+            width={200}
+            height={100}
+          />
+          <Image
+            className="w-full h-[200px] object-cover"
+            src={Photo4}
+            alt="Photo4"
+            width={200}
+            height={100}
+          />
+          <Image
+            className="w-full h-[200px] object-cover"
+            src={Photo5}
+            alt="Photo5"
+            width={200}
+            height={100}
+          />
+          <Image
+            className="w-full h-[200px] object-cover"
+            src={Photo6}
+            alt="Photo6"
+            width={200}
+            height={100}
+          />
         </div>
       </main>
     </>
