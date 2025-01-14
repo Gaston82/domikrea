@@ -32,7 +32,7 @@ const Produits = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.jpg" />
       </Head>
-      <main className="flex flex-col items-center justify-center w-full p-10 gap-20">
+      <main className="flex flex-col items-center justify-center w-full px-[100px] py-[50px] pb-[200px] gap-[30px]">
         <h2 className="font-bodoni self-start text-3xl">Créations</h2>
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-5">
           {categories.map(({ id, name, url }) => (
