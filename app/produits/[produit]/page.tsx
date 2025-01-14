@@ -58,6 +58,32 @@ const categories = [
   },
 ];
 
+const images = [
+  {
+    src: 'https://images.unsplash.com/photo-1541944743827-e04aa6427c33',
+    alt: 'Knitting',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1486129273931-27820249c615',
+    alt: 'Yarn',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1663612619657-f876bfca791e',
+    alt: 'Sewing',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1651177571506-6d38447d987b',
+    alt: 'Embroidery',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1506806732259-39c2d0268443',
+    alt: 'Clay',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1498075702571-ecb018f3752d',
+    alt: 'Drawing',
+  },
+];
 export async function generateStaticParams() {
   return categories.map((category) => ({ produit: category.id }));
 }
@@ -72,15 +98,38 @@ const ProduitsDetailPage = ({ params }: { params: { produit: string } }) => {
   }
 
   return (
-    <main className="flex flex-col items-center justify-center w-full p-10 gap-20">
-      <h2 className="font-bodoni self-start text-3xl">{category.name}</h2>
-      <div className="mt-4">
+    <main className="flex flex-col items-center justify-center w-full px-[100px] py-[50px] pb-[200px] gap-[50px]">
+      <div className="flex gap-8 flex-col md:flex-row items-start items-center md:items-start w-full">
+        <div className="flex flex-col w-full md:w-3/5 gap-4">
+          <h2 className="font-bodoni text-3xl">{category.name}</h2>
+          <p className="font-poppins leading-[3rem] font-light text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
+            magna non sem tristique volutpat. Pellentesque venenatis orci eu
+            nulla molestie, sit amet aliquet urna varius. Suspendisse id
+            pharetra leo, quis mollis lorem. Aenean lacinia tellus lectus, at
+            volutpat lectus rhoncus a.
+          </p>
+        </div>
         <Image
+          className="w-full md:w-2/5 h-[350px] object-cover"
           src={category.url}
           alt={category.name}
           width={600}
           height={400}
         />
+      </div>
+      <div className="w-full h-[1px] bg-gray-300"></div>
+      <div className="grid w-[80%] gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        {images.map((image, index) => (
+          <Image
+            key={index}
+            className="w-full h-[250px] object-cover"
+            src={image.src}
+            alt={image.alt}
+            width={200}
+            height={100}
+          />
+        ))}
       </div>
     </main>
   );
