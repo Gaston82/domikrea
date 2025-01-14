@@ -64,7 +64,6 @@ const Customisation = () => {
             varius.
           </p>
         </div>
-        {}
         <ImageGrid images={images} />
       </main>
     </>
