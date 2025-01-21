@@ -1,12 +1,33 @@
+import ImageGrid, { Image } from '@/components/ImageGrid';
 import Head from 'next/head';
-import Image from 'next/image';
 import React from 'react';
-import Photo1 from '../../public/stock/photo1.jpg';
-import Photo2 from '../../public/stock/photo2.jpg';
-import Photo3 from '../../public/stock/photo3.jpg';
-import Photo4 from '../../public/stock/photo4.jpg';
-import Photo5 from '../../public/stock/photo5.jpg';
-import Photo6 from '../../public/stock/photo6.jpg';
+
+const images: Image[] = [
+  {
+    src: 'https://images.unsplash.com/photo-1541944743827-e04aa6427c33',
+    alt: 'Knitting',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1486129273931-27820249c615',
+    alt: 'Yarn',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1663612619657-f876bfca791e',
+    alt: 'Sewing',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1651177571506-6d38447d987b',
+    alt: 'Embroidery',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1506806732259-39c2d0268443',
+    alt: 'Clay',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1498075702571-ecb018f3752d',
+    alt: 'Drawing',
+  },
+];
 
 const Customisation = () => {
   return (
@@ -43,50 +64,7 @@ const Customisation = () => {
             varius.
           </p>
         </div>
-        <div className="grid w-[80%] gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-          <Image
-            className="w-full h-[200px] object-cover"
-            src={Photo1}
-            alt="Photo1"
-            width={200}
-            height={100}
-          />
-          <Image
-            className="w-full h-[200px] object-cover"
-            src={Photo2}
-            alt="Photo2"
-            width={200}
-            height={100}
-          />
-          <Image
-            className="w-full h-[200px] object-cover"
-            src={Photo3}
-            alt="Photo3"
-            width={200}
-            height={100}
-          />
-          <Image
-            className="w-full h-[200px] object-cover"
-            src={Photo4}
-            alt="Photo4"
-            width={200}
-            height={100}
-          />
-          <Image
-            className="w-full h-[200px] object-cover"
-            src={Photo5}
-            alt="Photo5"
-            width={200}
-            height={100}
-          />
-          <Image
-            className="w-full h-[200px] object-cover"
-            src={Photo6}
-            alt="Photo6"
-            width={200}
-            height={100}
-          />
-        </div>
+        <ImageGrid images={images} />
       </main>
     </>
   );

@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { bodoni, poppins } from "./fonts/fonts";
-import Header from "@/components/Header";
+import type { Metadata } from 'next';
+import './globals.css';
+import { bodoni, poppins } from './fonts/fonts';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
-  title: "Domikrea",
-  description: "Domikrea Landing page",
+  title: 'Domikrea',
+  description: 'Domikrea Landing page',
 };
 
 export default function RootLayout({
