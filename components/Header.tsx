@@ -7,7 +7,14 @@ const Header = () => {
   return (
     <>
       <header className="flex justify-between items-center px-14">
-        <Image src={logo} alt="Domikrea logo" width="236" height="126" />
+        <Image
+          priority
+          src={logo}
+          alt="Domikrea logo"
+          width="236"
+          height="126"
+          className="w-auto h-auto"
+        />
         <Navbar />
       </header>
       <div className="w-full h-[1px] bg-gray-300"></div>

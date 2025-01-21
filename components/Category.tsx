@@ -17,6 +17,7 @@ const Category = ({ url, text }: CategoryProps): JSX.Element => {
       </span>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <Image
+        priority
         className="w-full h-full object-cover"
         src={url}
         alt={text}
