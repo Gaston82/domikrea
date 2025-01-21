@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Photo1 from '../public/stock/photo1.jpg';
 import Photo2 from '../public/stock/photo2.jpg';
@@ -6,14 +7,14 @@ import Photo4 from '../public/stock/photo4.jpg';
 import Photo5 from '../public/stock/photo5.jpg';
 import Photo6 from '../public/stock/photo1.jpg';
 import FranceFlag from '../public/flag-france.webp';
-import Carousel from 'nuka-carousel';
+import { Carousel } from 'nuka-carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCircleChevronLeft,
   faCircleChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 import { Bodoni_Moda } from 'next/font/google';
-// import Button from '@/components/Button/Button';
+import Button from '@/components/Button';
 
 const bodoniModa = Bodoni_Moda({ weight: '400', subsets: ['latin'] });
 
@@ -22,7 +23,7 @@ const Home = () => {
     <>
       <section>
         <div className="relative">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[9999] text-white text-center">
+          <div className="absolute inset-0 bottom-[100px] w-full text-white z-[9999] flex flex-col items-center justify-end top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
             <h1 className="text-5xl">Domikréa</h1>
             <p className="text-2xl font-extralight">
               Créations et décorations fait-main
@@ -51,7 +52,7 @@ const Home = () => {
             )}
           >
             <div className="relative">
-              <div className="absolute inset-0 w-full bg-black bg-opacity-30"></div>
+              <div className="absolute inset-0 w-screen bg-black bg-opacity-30"></div>
               <Image
                 className="w-screen h-screen object-cover"
                 src={Photo1}
@@ -61,8 +62,9 @@ const Home = () => {
               />
             </div>
             <div className="relative">
-              <div className="absolute inset-0 w-full bg-black bg-opacity-30"></div>
+              <div className="absolute inset-0 w-screen bg-black bg-opacity-30"></div>
               <Image
+                // className="w-screen h-screen object-cover"
                 className="w-screen h-screen object-cover"
                 src={Photo2}
                 alt="Photo2"
@@ -71,8 +73,9 @@ const Home = () => {
               />
             </div>
             <div className="relative">
-              <div className="absolute inset-0 w-full bg-black bg-opacity-30"></div>
+              <div className="absolute inset-0 w-screen bg-black bg-opacity-30"></div>
               <Image
+                // className="w-screen h-screen object-cover"
                 className="w-screen h-screen object-cover"
                 src={Photo3}
                 alt="Photo3"
@@ -81,8 +84,9 @@ const Home = () => {
               />
             </div>
             <div className="relative">
-              <div className="absolute inset-0 w-full bg-black bg-opacity-30"></div>
+              <div className="absolute inset-0 w-screen h-screen bg-black bg-opacity-30"></div>
               <Image
+                // className="w-screen h-screen object-cover"
                 className="w-screen h-screen object-cover"
                 src={Photo4}
                 alt="Photo4"
@@ -103,9 +107,9 @@ const Home = () => {
             pharetra leo, quis mollis lorem.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center gap-8">
+        <div className="flex flex-col items-center justify-center gap-8 ">
           <h2 className="self-start text-2xl">Les produits</h2>
-          <div className="grid grid-cols-[repeat(auto-fill,_minmax(200px,_1fr))] gap-8 w-full">
+          <div className="grid grid-cols-[repeat(auto-fill,_minmax(200px,_1fr))] gap-8 w-full md:grid-cols-3 md:auto-rows-[2">
             <Image
               className="w-full h-[200px] object-cover"
               src={Photo1}
